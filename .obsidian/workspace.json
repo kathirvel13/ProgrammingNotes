@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Responsive Web Design freecodecamp.md",
+                "file": "Guvi Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Responsive Web Design freecodecamp.md",
+                "file": "Guvi Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Responsive Web Design freecodecamp.md",
+                "file": "Guvi Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,12 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Responsive Web Design freecodecamp.md"
+                "file": "Guvi Python.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -147,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2603ff69b6c2c5ab",
+  "active": "bd1cc8a700de7b59",
   "lastOpenFiles": [
+    "Guvi Python.md",
     "Responsive Web Design freecodecamp.md",
     "Git and Github.md",
     "attachments/Git_pull.jpg",
