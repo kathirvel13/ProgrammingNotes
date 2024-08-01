@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "ade9e8c40f218dc3",
+        "id": "86e87b4259de615f",
         "type": "tabs",
         "children": [
           {
-            "id": "869469edfbbb9a1a",
+            "id": "d3c3a9202a42a4ee",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "freecodecamp CSS.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "freecodecamp CSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "freecodecamp CSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "freecodecamp CSS.md"
+              }
             }
           }
         ],
@@ -139,9 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "869469edfbbb9a1a",
+  "active": "d3c3a9202a42a4ee",
   "lastOpenFiles": [
     "freecodecamp HTML.md",
+    "freecodecamp CSS.md",
     "Markdown Basics.md",
     "Guvi Python.md",
     "Responsive Web Design freecodecamp.md",
