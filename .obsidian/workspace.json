@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6023de632a3ced70",
+        "id": "a056ce3bd450943f",
         "type": "tabs",
         "children": [
           {
-            "id": "24cdd8bb165d3e68",
+            "id": "fbc42a9efe05a732",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -122,7 +122,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -139,16 +139,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24cdd8bb165d3e68",
+  "active": "fbc42a9efe05a732",
   "lastOpenFiles": [
+    "Git and Github.md",
     "NC Linux.md",
-    "attachments/Linux_file_system.png",
     "freecodecamp CSS.md",
-    "freecodecamp HTML.md",
     "Markdown Basics.md",
+    "freecodecamp HTML.md",
+    "attachments/Linux_file_system.png",
     "Guvi Python.md",
     "Responsive Web Design freecodecamp.md",
-    "Git and Github.md",
     "attachments/Git_pull.jpg",
     "attachments",
     "Git Commands.png",

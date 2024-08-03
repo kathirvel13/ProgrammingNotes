@@ -18,7 +18,7 @@ Initialise a new git repository. This command is run only once in a project.
 ~~~ sh
 git init <Directory>
 ~~~
-### clone
+### clone ^6980b6
 Downloads the repository hosted on github to your local machine.
 ~~~ sh
 git clone <Repo Link> [directory]
