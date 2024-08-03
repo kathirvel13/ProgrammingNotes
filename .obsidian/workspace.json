@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a056ce3bd450943f",
+        "id": "e675f40a6b458300",
         "type": "tabs",
         "children": [
           {
-            "id": "fbc42a9efe05a732",
+            "id": "2856ddbdad8d5871",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,10 +139,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fbc42a9efe05a732",
+  "active": "2856ddbdad8d5871",
   "lastOpenFiles": [
-    "Git and Github.md",
+    "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
     "NC Linux.md",
+    "Git and Github.md",
     "freecodecamp CSS.md",
     "Markdown Basics.md",
     "freecodecamp HTML.md",
