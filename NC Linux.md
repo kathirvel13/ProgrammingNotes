@@ -14,12 +14,17 @@ Kernel's function is to virtualize and control common computer hardware resource
 - `cd <Directory>` - Change Directory
 - `cd` - Changes to user directory
 - `cd ..` - Goes back to previous directory
+- `cd -` - Goes back to directory which we were last in
 - `whoami` - Displays the name of the logged-in user
 - `cp <Source> <Destination>` - Copies file from source to destination
 - `mv <Source> <Destination>` - Moves file from source to destination
 - `rm <file>` - Removes file
-- `cat <file>` - Concatenates contents of the file 
+- `cat <file>` - Concatenates contents of the file
+- `touch <file>` - Creates a new file
+- `mkdir <folder>` - Creates a new folder
+- `tree .` - Displays the contents of present directory in a tree format
 - `which <command>` - Displays the location of that linux command 
+- `sudo updatedb && locate <file>` - Search for files across system
 - `ps` - Lists all the running processes
 ## Help in Linux
 Solve issues to understand a long command by visiting [https://explainshell.com/](https://explainshell.com/).
@@ -48,6 +53,7 @@ Solve issues to understand a long command by visiting [https://explainshell.com
 `Ctrl+L` - Clear screen
 `Ctrl+C` - Kill a Foreground process
 `Ctrl+Z` - Puts a foreground process into sleep
+`Ctrl+R` - Search through the command history
 `sudo !!` - Executes the previous command with root privileges
 
 # Linux Package Manager
@@ -84,8 +90,43 @@ sudo apt install git
 git clone <repo URL>
 ```
 
+# Permissions
+- (`r`) - Read
+- (`w`) - Write
+- (`x`) - Execute
+
+```shell
+- rwx rw- r--   1 root root 1641 May  4 23:42 /etc/passwd
+- --- --- ---   |  |    |    |   |__________|
+|  |   |   |    |  |    |    |        |_ Date
+|  |   |   |    |  |    |    |__________ File Size
+|  |   |   |    |  |    |_______________ Group
+|  |   |   |    |  |____________________ User
+|  |   |   |    |_______________________ Number of hard links
+|  |   |   |_ Permission of others (read)
+|  |   |_____ Permissions of the group (read, write)
+|  |_________ Permissions of the owner (read, write, execute)
+|____________ File type (- = File, d = Directory, l = Link, ... )
+```
+
+We can modify permissions using the `chmod` command, permission group references (`u` - owner, `g` - Group, `o` - others, `a` - All users), and either a `+` or a `-` to add remove the designated permissions.
+```shell
+chmod a+r <file>
+chmod 754 <file>
+```
+
+```shell
+Binary Notation:                4 2 1  |  4 2 1  |  4 2 1
+----------------------------------------------------------
+Binary Representation:          1 1 1  |  1 0 1  |  1 0 0
+----------------------------------------------------------
+Octal Value:                      7    |    5    |    4
+----------------------------------------------------------
+Permission Representation:      r w x  |  r - x  |  r - -
+```
+
 # Daemons in Linux
-'Daemons' in Greek mean 'supernatural beings which is not associated neither with good nor bad'.
+'Daemons' in Greek mean 'supernatural beings which is not associated neither with good nor bad'. Most Linux distributions have now switched to `systemd`. This daemon is an `Init process` started first and thus has the process ID (PID) 1.
 Daemons are automatically initiated running programs. `ps -aux` lists all the processes running on your system.
 ```shell
 ps -aux
@@ -117,12 +158,28 @@ sudo !!
 ```
 
 # Managing Processes in Linux
+There are two types of processes.
+- Foreground Process
+- Background Process
+```shell
+sleep 600
+ping -c 1000 google.com
+# Run a command and put it into sleep using Ctrl+Z
+jobs
+bg <job ID>
+fg <job ID>
+```
+
 `ps -u <User> | grep <Process Name>` - Lists all the processes running in a user account
 `pgrep <Process Name>` - Displays the process ID of a process
 `kill <Process ID>` - Kills the process
 `ps -aux` - Displays all the running process
 `top` or `htop` - Displays the CPU usage of running processes
 
+# Execute Multiple Commands
+- Semicolon (`;`) is a command separator and executes the commands by ignoring previous commands' results and errors.
+- Double `ampersand` characters (`&&`) are used to run the commands one after the other. If there is an error in one of the commands, the following ones will not be executed anymore, and the whole process will be stopped.
+- Pipes (`|`) depend not only on the correct and error-free operation of the previous processes but also on the previous processes results.
 # Components of Linux
 
 | **Component**     | **Description**                                                                                                                                                                                                                          |
@@ -170,3 +227,22 @@ The prompt can be customized using special characters and variables in the shell
 | `\@`                  | Current time                               |
 | `\u`                  | Current username                           |
 | `\w`                  | Full path of the current working directory |
+# System Information
+
+| **Command** | **Description**                                                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `uname`     | Prints basic information about the operating system name and system hardware.                                                      |
+| `ifconfig`  | The ifconfig utility is used to assign or to view an address to a network interface and/or configure network interface parameters. |
+| `ip`        | ip is a utility to show or manipulate routing, network devices, interfaces and tunnels.                                            |
+| `netstat`   | Shows network status.                                                                                                              |
+| `ss`        | Another utility to investigate sockets.                                                                                            |
+| `ps`        | Shows process status.                                                                                                              |
+| `env`       | Prints environment or sets and executes command.                                                                                   |
+| `lsblk`     | Lists block devices.                                                                                                               |
+| `lsusb`     | Lists USB devices                                                                                                                  |
+| `lsof`      | Lists opened files.                                                                                                                |
+| `lspci`     | Lists PCI devices.                                                                                                                 |
+## SSH
+```shell
+ssh [username]@[IP address]
+```
