@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "449253b8e1efbe67",
+        "id": "3b48716d24a409b4",
         "type": "tabs",
         "children": [
           {
-            "id": "5c42da4437cb6846",
+            "id": "4614496c288f4105",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,14 +139,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5c42da4437cb6846",
+  "active": "4614496c288f4105",
   "lastOpenFiles": [
+    "freecodecamp CSS.md",
+    "freecodecamp HTML.md",
+    "Git and Github.md",
+    "Markdown Basics.md",
     "NC Linux.md",
     "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
-    "Git and Github.md",
-    "freecodecamp CSS.md",
-    "Markdown Basics.md",
-    "freecodecamp HTML.md",
     "attachments/Linux_file_system.png",
     "Guvi Python.md",
     "Responsive Web Design freecodecamp.md",

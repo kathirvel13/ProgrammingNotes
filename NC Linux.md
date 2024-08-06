@@ -7,6 +7,7 @@
 ***Everything in Linux is a file.***
 
 Kernel's function is to virtualize and control common computer hardware resources like CPU, allocated memory, accessed data, and others. The kernel gives each process its own virtual resources and prevents/mitigates conflicts between different processes.
+
 # Basic Linux Commands
 - `pwd` - Print Working Directory
 - `ls <Directory>` - List
@@ -19,11 +20,13 @@ Kernel's function is to virtualize and control common computer hardware resource
 - `rm <file>` - Removes file
 - `cat <file>` - Concatenates contents of the file 
 - `which <command>` - Displays the location of that linux command 
+- `ps` - Lists all the running processes
 ## Help in Linux
 Solve issues to understand a long command by visiting [https://explainshell.com/](https://explainshell.com/).
 - `man <command>` - Displays the manual page of that linux command 
 - `<command> --help` - Lists all functions of the command
 - `apropos <keyword>` - Searching for a command with the given keyword
+
 # Managing Linux users
 - `sudo adduser <username>` - Adds a user, sets a password and a user directory
 - `sudo useradd <username>` - Just adds a user and does not set a password nor a directory 
@@ -39,10 +42,14 @@ Solve issues to understand a long command by visiting [https://explainshell.com
 📝**Note** - Whenever a user account is created, a group is also created for the user.
 
 `sudo` command stands for **Super User do**.
+
 # Shortcuts
 `Ctrl+D` - Logout
 `Ctrl+L` - Clear screen
+`Ctrl+C` - Kill a Foreground process
+`Ctrl+Z` - Puts a foreground process into sleep
 `sudo !!` - Executes the previous command with root privileges
+
 # Linux Package Manager
 ## `dpkg` 
 It is a low-level package manager. Download the package of the application you want to install and run `sudo dpkg -i <.deb file>`. But `dpkg` is unable to automatically install any dependency package required to run the program. We have to that manually by searching for packages on web.
@@ -62,6 +69,8 @@ sudo apt purge <Package>
 ```
 `remove` only deletes the package whereas `purge` also deletes the user data of that package.
 You can also try `aptitude` package manager which is `apt` on steroids.
+
+`grep`  stands for Global Regular Expression Print and it is used for filtering in terminal.
 ## `snap`
 Unlike `apt`, it does not use repositories to install packages. Rather it is like an app store.
 ```shell
@@ -74,6 +83,46 @@ Learn more at [[Git and Github#^6980b6|clone]].
 sudo apt install git
 git clone <repo URL>
 ```
+
+# Daemons in Linux
+'Daemons' in Greek mean 'supernatural beings which is not associated neither with good nor bad'.
+Daemons are automatically initiated running programs. `ps -aux` lists all the processes running on your system.
+```shell
+ps -aux
+pstree
+ps -aux | grep <Process Name>
+```
+Names of processes ending with `d` (like `sshd` or `ntpd`) are all daemon processes. All daemons are processes but not all processes are daemons.
+## Managing Daemons
+`systemd` is the master daemon and it manages all other daemons. It is the first daemon to be initiated and all other daemons are forked from it.
+We use a tool called  `systemctl` to manage all daemons.
+📝**Note**- Daemons are also called Units.
+```shell
+systemctl start <Process Name>
+systemctl status <Process Name>
+systemctl stop <Process Name>
+
+systemctl restart <Process Name>
+systemctl reload-or-restart <Process Name>
+
+systemctl disable <Process Name>
+systemctl enable <Process Name>
+
+systemctl is-enabled <Process Name>
+systemctl is-active <Process Name>
+
+systemctl list-units
+
+sudo !!
+```
+
+# Managing Processes in Linux
+`ps -u <User> | grep <Process Name>` - Lists all the processes running in a user account
+`pgrep <Process Name>` - Displays the process ID of a process
+`kill <Process ID>` - Kills the process
+`ps -aux` - Displays all the running process
+`top` or `htop` - Displays the CPU usage of running processes
+
 # Components of Linux
 
 | **Component**     | **Description**                                                                                                                                                                                                                          |
@@ -85,6 +134,7 @@ git clone <repo URL>
 | `Graphics server` | This provides a graphical sub-system (server) called "X" or "X-server" that allows graphical programs to run locally or remotely on the X-windowing system.                                                                              |
 | `Window Manager`  | Also known as a graphical user interface (GUI). There are many options, including GNOME, KDE, MATE, Unity, and Cinnamon. A desktop environment usually has several applications, including file and web browsers.                        |
 | `Utilities`       | Applications or utilities are programs that perform particular functions for the user or another program.                                                                                                                                |
+
 # Linux File System
 The Linux operating system is structured in a tree-like hierarchy and is documented in the [Filesystem Hierarchy](http://www.pathname.com/fhs/) Standard (FHS).
 ![[Linux_file_system.png]]
