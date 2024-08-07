@@ -10,22 +10,42 @@ Kernel's function is to virtualize and control common computer hardware resource
 
 # Basic Linux Commands
 - `pwd` - Print Working Directory
-- `ls <Directory>` - List
+- `ls <Directory>` or `ls -la` - List
 - `cd <Directory>` - Change Directory
 - `cd` - Changes to user directory
-- `cd ..` - Goes back to previous directory
+- `cd ..` - Goes back to previous parent directory
+- `cd ../..` - Goes back to previous previous parent directory
 - `cd -` - Goes back to directory which we were last in
 - `whoami` - Displays the name of the logged-in user
 - `cp <Source> <Destination>` - Copies file from source to destination
 - `mv <Source> <Destination>` - Moves file from source to destination
 - `rm <file>` - Removes file
 - `cat <file>` - Concatenates contents of the file
-- `touch <file>` - Creates a new file
 - `mkdir <folder>` - Creates a new folder
+- `mkdir -p <folder>/<Subfolders>` - Creates a parent folder with child folders
 - `tree .` - Displays the contents of present directory in a tree format
 - `which <command>` - Displays the location of that linux command 
-- `sudo updatedb && locate <file>` - Search for files across system
+- `sudo updatedb && locate *.txt` - Search for files across system
 - `ps` - Lists all the running processes
+## Creating files
+```shell
+touch example.txt
+cat > example.txt # Ctrl+D to save file
+cat << EOF > example.txt # Type EOF to save file
+echo "Contents to be added to the file" > example.txt
+```
+## Pagers to read file
+```shell
+cat <file>
+less <file>
+more <file>
+head <file>
+tail <file>
+```
+## ⚠ Dangerous Command
+```shell
+sudo rm -fr # Removes french language package
+```
 ## Help in Linux
 Solve issues to understand a long command by visiting [https://explainshell.com/](https://explainshell.com/).
 - `man <command>` - Displays the manual page of that linux command 
@@ -54,7 +74,21 @@ Solve issues to understand a long command by visiting [https://explainshell.com
 `Ctrl+C` - Kill a Foreground process
 `Ctrl+Z` - Puts a foreground process into sleep
 `Ctrl+R` - Search through the command history
+`Ctrl+A` - Takes cursor to the beginning of the command
+`Ctrl+E` - Takes cursor to the end of the command
+`Ctrl+U` - Deletes everything before the cursor
+`Ctrl+K` - Deletes everything after the cursor
+`Ctrl+Y` - Pastes the deleted content
+`Tab` - Autocomplete file names
+`Tab Tab` - Lists file names
+`Ctrl+X+E` - Opens the command in a text editor to be edited
 `sudo !!` - Executes the previous command with root privileges
+## Set alias for long commands
+```shell
+nano .bashrc
+# Add the following to the file
+alias la='ls -la'
+```
 
 # Linux Package Manager
 ## `dpkg` 
@@ -67,6 +101,7 @@ sudo apt upgrade -y
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install <Packages>
 sudo apt list --installed
+sudo apt list --installed | wc -l
 sudo apt list --installed | grep ^<Package>
 sudo apt show <Package>
 sudo apt search <Package>
@@ -77,6 +112,7 @@ sudo apt purge <Package>
 You can also try `aptitude` package manager which is `apt` on steroids.
 
 `grep`  stands for Global Regular Expression Print and it is used for filtering in terminal.
+Likewise, `wc -l` displays the total count of the command.
 ## `snap`
 Unlike `apt`, it does not use repositories to install packages. Rather it is like an app store.
 ```shell
@@ -180,6 +216,13 @@ fg <job ID>
 - Semicolon (`;`) is a command separator and executes the commands by ignoring previous commands' results and errors.
 - Double `ampersand` characters (`&&`) are used to run the commands one after the other. If there is an error in one of the commands, the following ones will not be executed anymore, and the whole process will be stopped.
 - Pipes (`|`) depend not only on the correct and error-free operation of the previous processes but also on the previous processes results.
+
+# Web Services
+## `curl`
+`cURL` is a tool that allows us to transfer files from the shell over protocols like `HTTP`, `HTTPS`, `FTP`, `SFTP`, `FTPS`, or `SCP`. This tool gives us the possibility to control and test websites remotely. Besides the remote servers' content, we can also view individual requests to look at the client's and server's communication.
+## `wget`
+An alternative to curl is the tool `wget`. With this tool, we can download files from FTP or HTTP servers directly from the terminal, and it serves as a good download manager. 
+
 # Components of Linux
 
 | **Component**     | **Description**                                                                                                                                                                                                                          |
@@ -242,7 +285,19 @@ The prompt can be customized using special characters and variables in the shell
 | `lsusb`     | Lists USB devices                                                                                                                  |
 | `lsof`      | Lists opened files.                                                                                                                |
 | `lspci`     | Lists PCI devices.                                                                                                                 |
-## SSH
+# SSH
+Secure Shell (`SSH`) is a network protocol that allows the secure transmission of data and commands over a network.
+The most commonly used SSH server is the OpenSSH server. OpenSSH is a free and open-source implementation of the Secure Shell (SSH) protocol that allows the secure transmission of data and commands over a network.
+OpenSSH can be configured and customized by editing the file `/etc/ssh/sshd_config` with a text editor.
 ```shell
 ssh [username]@[IP address]
 ```
+
+# System Logs
+System logs on Linux are a set of files that contain information about the system and the activities taking place on it.
+There are several different types of system logs on Linux, including:
+- Kernel Logs contain information about the system's kernel, including hardware drivers, system calls, and kernel events. They are stored in the `/var/log/kern.log` file.
+- System Logs contain information about system-level events, such as service starts and stops, login attempts, and system reboots. They are stored in the `/var/log/syslog` file.
+- Authentication Logs contain information about user authentication attempts, including successful and failed attempts. They are stored in the `/var/log/auth.log` file.
+- Application Logs contain information about the activities of specific applications running on the system. They are often stored in their own files, such as `/var/log/apache2/error.log` for the Apache web server or `/var/log/mysql/error.log` for the MySQL database server.
+- Security Logs and their events are often recorded in a variety of log files, depending on the specific security application or tool in use.

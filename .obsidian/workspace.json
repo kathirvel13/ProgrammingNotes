@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3b48716d24a409b4",
+        "id": "a97d166b99f698e0",
         "type": "tabs",
         "children": [
           {
-            "id": "4614496c288f4105",
+            "id": "1b16c05e8bb30490",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -115,7 +115,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -147,13 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4614496c288f4105",
+  "active": "bd1cc8a700de7b59",
   "lastOpenFiles": [
+    "NC Bash Scripting.md",
+    "NC Linux.md",
     "freecodecamp CSS.md",
     "freecodecamp HTML.md",
     "Git and Github.md",
     "Markdown Basics.md",
-    "NC Linux.md",
     "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
     "attachments/Linux_file_system.png",
     "Guvi Python.md",
