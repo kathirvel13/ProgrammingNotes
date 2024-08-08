@@ -89,6 +89,7 @@ Solve issues to understand a long command by visiting [https://explainshell.com
 `Ctrl+X+E` - Opens the command in a text editor to be edited
 `sudo !!` - Executes the previous command with root privileges
 ## Set alias for long commands
+`.bashrc` is a hidden file located in your home directory.
 ```shell
 nano .bashrc
 # Add the following to the file
