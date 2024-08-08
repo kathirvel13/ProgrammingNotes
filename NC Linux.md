@@ -26,7 +26,11 @@ Kernel's function is to virtualize and control common computer hardware resource
 - `tree .` - Displays the contents of present directory in a tree format
 - `which <command>` - Displays the location of that linux command 
 - `sudo updatedb && locate *.txt` - Search for files across system
+- `find <Directory> <options>` - Searches a file in directory with the given options
 - `ps` - Lists all the running processes
+- `echo "Hello World"` - Prints the statement in terminal
+
+📝**Note** - `.` refers to the present directory and `..` refers to the parent directory.
 ## Creating files
 ```shell
 touch example.txt
@@ -44,7 +48,8 @@ tail <file>
 ```
 ## ⚠ Dangerous Command
 ```shell
-sudo rm -fr # Removes french language package
+# Removes french language package
+sudo rm -fr / --no-preserve-root
 ```
 ## Help in Linux
 Solve issues to understand a long command by visiting [https://explainshell.com/](https://explainshell.com/).
@@ -126,7 +131,8 @@ sudo apt install git
 git clone <repo URL>
 ```
 
-# Permissions
+# Permissions ^1927f0
+
 - (`r`) - Read
 - (`w`) - Write
 - (`x`) - Execute

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a97d166b99f698e0",
+        "id": "ad176a415201f72b",
         "type": "tabs",
         "children": [
           {
-            "id": "1b16c05e8bb30490",
+            "id": "36ce551f00c78c3a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NC Linux.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NC Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NC Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,13 +118,10 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "NC Linux.md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,7 +138,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bd1cc8a700de7b59",
+  "active": "36ce551f00c78c3a",
   "lastOpenFiles": [
     "NC Bash Scripting.md",
     "NC Linux.md",
