@@ -84,6 +84,7 @@ They are built-in variables.
 `$USER` - Name of the logged in user
 `$PWD` - Returns the present working directory
 `$OLDPWD` - Returns the previous working directory
+`$_` - Returns the previously executed command
 
 You can view these variables by using `echo` and can even use in your bash script.
 

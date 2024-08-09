@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "349028b9c58e982e",
+        "id": "e18920fd36fac881",
         "type": "tabs",
         "children": [
           {
-            "id": "c20d7aa38e8bcd4e",
+            "id": "fc44987a057bc7ef",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -139,7 +139,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c20d7aa38e8bcd4e",
+  "active": "fc44987a057bc7ef",
   "lastOpenFiles": [
     "NC Bash Scripting.md",
     "NC Linux.md",
