@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6e68b3075d7bc868",
+        "id": "6f91ae06ccad50ad",
         "type": "tabs",
         "children": [
           {
-            "id": "ae254ce3736605e1",
+            "id": "f66ee38661616abf",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,12 +156,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae254ce3736605e1",
+  "active": "f66ee38661616abf",
   "lastOpenFiles": [
-    "Git and Github.md",
-    "Artificial Intelligence.md",
     "NC Bash Scripting.md",
     "NC Linux.md",
+    "Artificial Intelligence.md",
+    "Git and Github.md",
     "Markdown Basics.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
