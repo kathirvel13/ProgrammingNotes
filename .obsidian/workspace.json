@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b2b32f7737785f59",
+        "id": "6e68b3075d7bc868",
         "type": "tabs",
         "children": [
           {
-            "id": "9d7370194a8b5523",
+            "id": "ae254ce3736605e1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -155,13 +156,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d7370194a8b5523",
+  "active": "ae254ce3736605e1",
   "lastOpenFiles": [
+    "Git and Github.md",
     "Artificial Intelligence.md",
     "NC Bash Scripting.md",
     "NC Linux.md",
     "Markdown Basics.md",
-    "Git and Github.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
     "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
