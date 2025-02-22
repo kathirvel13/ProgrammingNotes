@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6f91ae06ccad50ad",
+        "id": "9596eab629fc850a",
         "type": "tabs",
         "children": [
           {
-            "id": "f66ee38661616abf",
+            "id": "36c83e2afa05c189",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,15 +156,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f66ee38661616abf",
+  "active": "36c83e2afa05c189",
   "lastOpenFiles": [
+    "Matlab.md",
+    "Untitled.canvas",
     "NC Bash Scripting.md",
     "NC Linux.md",
-    "Artificial Intelligence.md",
-    "Git and Github.md",
     "Markdown Basics.md",
+    "Git and Github.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
+    "Artificial Intelligence.md",
     "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
     "attachments/Linux_file_system.png",
     "Guvi Python.md",
@@ -172,7 +174,6 @@
     "attachments/Git_pull.jpg",
     "attachments",
     "Git Commands.png",
-    "Untitled.canvas",
     "Welcome.md"
   ]
 }
