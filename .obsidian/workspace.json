@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9596eab629fc850a",
+        "id": "1f5435ea44b7be6e",
         "type": "tabs",
         "children": [
           {
-            "id": "36c83e2afa05c189",
+            "id": "7cfb40242a435f7f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Matlab.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Matlab"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#matlab",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,17 +160,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "36c83e2afa05c189",
+  "active": "7cfb40242a435f7f",
   "lastOpenFiles": [
+    "attachments/markdown-cheat-sheet.md",
     "Matlab.md",
-    "Untitled.canvas",
-    "NC Bash Scripting.md",
-    "NC Linux.md",
     "Markdown Basics.md",
+    "NC Linux.md",
+    "NC Bash Scripting.md",
     "Git and Github.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
     "Artificial Intelligence.md",
+    "README.md",
+    "Untitled.canvas",
     "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
     "attachments/Linux_file_system.png",
     "Guvi Python.md",

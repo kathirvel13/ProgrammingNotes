@@ -1,7 +1,7 @@
 #HTML
 # Heading 1
 This is a paragraph.
-You can create upto 6 levels of headings using #.
+You can create up to 6 levels of headings using #.
 
 >You can create quote block using >.
 >>Pressing Shift + Enter extends it into multiple paragraphs.
