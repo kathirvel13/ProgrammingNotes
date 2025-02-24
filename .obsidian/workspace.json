@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matlab.md",
+                "file": "MATLAB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Matlab"
+              "title": "MATLAB"
             }
           }
         ]
@@ -164,7 +164,7 @@
   "lastOpenFiles": [
     "Markdown Basics.md",
     "README.md",
-    "Matlab.md",
+    "MATLAB.md",
     "attachments/markdown-cheat-sheet.md",
     "NC Linux.md",
     "NC Bash Scripting.md",
