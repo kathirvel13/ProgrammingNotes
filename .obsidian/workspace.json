@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "1f5435ea44b7be6e",
+        "id": "14f9801f3dec1006",
         "type": "tabs",
         "children": [
           {
-            "id": "7cfb40242a435f7f",
+            "id": "dcab4ffa57152854",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Matlab.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "Matlab"
@@ -160,18 +160,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7cfb40242a435f7f",
+  "active": "dcab4ffa57152854",
   "lastOpenFiles": [
-    "attachments/markdown-cheat-sheet.md",
-    "Matlab.md",
     "Markdown Basics.md",
+    "README.md",
+    "Matlab.md",
+    "attachments/markdown-cheat-sheet.md",
     "NC Linux.md",
     "NC Bash Scripting.md",
     "Git and Github.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
     "Artificial Intelligence.md",
-    "README.md",
     "Untitled.canvas",
     "attachments/Linux_Fundamentals_Module_Cheat_Sheet.pdf",
     "attachments/Linux_file_system.png",
