@@ -11,10 +11,14 @@
             "id": "0d39043ecd21f1fb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MATLAB.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MATLAB"
             }
           }
         ]
@@ -158,9 +162,9 @@
   },
   "active": "0d39043ecd21f1fb",
   "lastOpenFiles": [
+    "README.md",
     "MATLAB.md",
     "Markdown Basics.md",
-    "README.md",
     "attachments/markdown-cheat-sheet.md",
     "NC Linux.md",
     "NC Bash Scripting.md",

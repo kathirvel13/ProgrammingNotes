@@ -7,12 +7,13 @@ MATLAB consists of three main windows.
 3. Current folder (file explorer)
 Use *Live Script* to create a script with multiple lines of command and execute them all at once.
 # Basic Commands
-```MATLAB
+``` MATLAB
 5*3
 k = ans + 1
 k = k / 2
 k
 var_no = (ans+k)/2;
+%{This is a comment.}%
 ```
 + Unless you specify an output variable, MATLAB stores results in a variable named `ans`.
 + Equal to (=) sign is the assignment operator.
@@ -51,16 +52,16 @@ format short
 pi
 ```
 # Arrays
-All MATLAB variables are _arrays_. So, each numeric variable can contain multiple numbers. You can store related data in one variable by using an array.
-Scalar is represented by a _1_-by-_1_ array. Create arrays with multiple elements using square brackets.
+- All MATLAB variables are _arrays_. So, each numeric variable can contain multiple numbers. You can store related data in one variable by using an array.
+- Scalar is represented by a _1_-by-_1_ array. Create arrays with multiple elements using square brackets.
 ``` MATLAB
 x = [3 5]
 y = [1; 7]
 mat = [1 2 3; 1 4 9]
 d=[sqrt(10), pi^2]
 ```
-Separate elements by space or comma to create a row vector (1-by-_n_). Separate elements by semicolon (;) to create a column vector (n-by-_1_).
-You can use a combination of spaces and semicolons to create a _matrix_, which is an array with multiple rows and columns.
+- Separate elements by space or comma to create a row vector (1-by-_n_). Separate elements by semicolon (;) to create a column vector (n-by-_1_).
+- You can use a combination of spaces and semicolons to create a _matrix_, which is an array with multiple rows and columns.
 ```MATLAB
 a = 1:10
 b = 1:2:49
@@ -70,9 +71,9 @@ x = x'
 c = (5:2:9)'
 h = linspace(1,2*pi,100)'
 ```
-You can create an evenly spaced vector by using the colon (:) operator and `start:step:stop` values. Notice that square brackets are not needed when you use the `:` operator. It uses a default spacing of `1`.
-If you know the number of elements in a range, use `linspace(first,last,no_of_elements)` which means *linearly spaced* to generate the vector.
-The transpose operator (`'`) converts a row vector to a column vector.
+- You can create an evenly spaced vector by using the colon (:) operator and `start:step:stop` values. Notice that square brackets are not needed when you use the `:` operator. It uses a default spacing of `1`.
+- If you know the number of elements in a range, use `linspace(first,last,no_of_elements)` which means *linearly spaced* to generate the vector.
+- The transpose operator (`'`) converts a row vector to a column vector.
 ```MATLAB
 x = rand(2)
 y = rand(2, 3)
@@ -80,6 +81,57 @@ a = zeros(3)
 b = ones(4, 3)
 size(y)
 ```
-`rand(2)` creates a _2_-by-_2_ square matrix with random elements in the range 0 and 1. `rand(2, 3)` creates a _2_-by-_3_ rectangular matrix.
-Most array creation functions accept the same inputs as `rand`. For example, the `zeros` and `ones` functions create matrices of all zeros and all ones, respectively.
-Use `size()` to find the size of a matrix.
+- `rand(2)` creates a _2_-by-_2_ square matrix with random elements in the range 0 and 1. `rand(2, 3)` creates a _2_-by-_3_ rectangular matrix.
+- Most array creation functions accept the same inputs as `rand`. For example, the `zeros` and `ones` functions create matrices of all zeros and all ones, respectively.
+- Use `size()` to find the size of a matrix.
+## Indexing
+- You can extract values from an array using _row-column indexing_. Indexing in MATLAB begins with 1 and not 0.
+- Use the MATLAB keyword `end` as either a row or column index to reference the last element.
+- There is no negative indexing. Instead use arithmetic with the keyword `end`.
+- To index into a vector, use a single index value. Use a single range of index values to reference multiple vector elements.
+- If you use only one index with a matrix, MATLAB traverses down each column in order.
+``` MATLAB
+a = linspace(1,10,10)'
+x = rand(5, 3)
+a(6)
+a(3:5) %{both 2nd and fifth elements are included in range}%
+x(2, 2)
+x(4, end)
+x(end-1, end-2)
+x(13) %{it is same as x(3, 3)}%
+```
+Consider matrix `x = rand(5, 3)`. The table given below lists the different methods to index an element in a matrix.
+
+| Index | 1                                      | 2                                      | 3                                     |
+| ----- | -------------------------------------- | -------------------------------------- | ------------------------------------- |
+| 1     | `x(1,1)`<br>`x(end-4,end-2)`<br>`x(1)` | `x(1,2)`<br>`x(end-4,end-1)`<br>`x(6)` | `x(1,3)`<br>`x(end-4,end)`<br>`x(11)` |
+| 2     | `x(2,1)`<br>`x(end-3,end-2)`<br>`x(2)` | `x(2,2)`<br>`x(end-3,end-1)`<br>`x(7)` | `x(2,3)`<br>`x(end-3,end)`<br>`x(12)` |
+| 3     | `x(3,1)`<br>`x(end-2,end-2)`<br>`x(3)` | `x(3,2)`<br>`x(end-2,end-1)`<br>`x(8)` | `x(3,3)`<br>`x(end-2,end)`<br>`x(13)` |
+| 4     | `x(4,1)`<br>`x(end-1,end-2)`<br>`x(4)` | `x(4,2)`<br>`x(end-1,end-1)`<br>`x(9)` | `x(4,3)`<br>`x(end-1,end)`<br>`x(14)` |
+| 5     | `x(5,1)`<br>`x(end,end-2)`<br>`x(5)`   | `x(5,2)`<br>`x(end,end-1)`<br>`x(10)`  | `x(5,3)`<br>`x(end,end)`<br>`x(15)`   |
+- When used as an index, the colon operator (`:`) specifies all the elements in that dimension.
+- The colon operator can also specify a range of values.
+- Unlike python, both the starting element and ending element are included in the range when slicing.
+- For indexing nonconsecutive numbers, you can use an row vector as an index.
+- You can change the elements in a vector by combining indexing with assignment.
+```MATLAB
+x(2, :) %{second row}%
+x(2:4, 1:2)
+x(:, end-1:end) %{Last two columns of x}%
+a = 1:3:30
+a([1, 4, 9])
+a(2) = 101
+```
+# Operation on vectors
+```MATLAB
+x = [1 2 3]
+y = x + 1 %{adds 1 to every element of x and stores in y}%
+z = 2 * x %{multiplies every element by 2 and stores in z}%
+sum = x + y %{corresponding elements are added}%
+x = max(x)
+y = sqrt(y)
+y = round(y)
+a = z .* y
+```
+- To perform vector-to-vector operation, they should have the same size.
+- The `*` operator performs matrix multiplication on two equally sized vectors. The `.*` operator performs element-wise multiplication by multiplying the corresponding elements of two equally sized arrays.
