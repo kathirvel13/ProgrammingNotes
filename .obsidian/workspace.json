@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "9928caf4ee4666da",
+        "id": "996115a4bbf49629",
         "type": "tabs",
         "children": [
           {
-            "id": "0d39043ecd21f1fb",
+            "id": "a9fff3d3cbea2d62",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MATLAB.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MATLAB"
+              "title": "New tab"
             }
           }
         ]
@@ -160,10 +156,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d39043ecd21f1fb",
+  "active": "a9fff3d3cbea2d62",
   "lastOpenFiles": [
-    "attachments/MATLAB_for_loop.png",
     "MATLAB.md",
+    "attachments/Quick Reference.pdf",
+    "attachments/MATLAB_for_loop.png",
     "attachments/MATLAB_conditional.png",
     "Markdown Basics.md",
     "README.md",

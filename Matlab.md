@@ -1,5 +1,6 @@
 #matlab
 MATLAB is an abbreviation for ***MATrix LABoratory***.
+[[attachments/Quick Reference.pdf |Quick reference notes]]
 # Interface
 
 MATLAB consists of three main windows.
