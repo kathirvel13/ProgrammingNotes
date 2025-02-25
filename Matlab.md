@@ -63,6 +63,15 @@ pi
 - To display more decimal values, use `format long`.
 - To go back to default, use `format short`.
 
+```MATLAB
+element = ["Lithium" "Argon" "Potassium" "Calcium" "Scandium" "Vanadium"]
+at_no = [3 18 19 20 21 23]
+disp("The atomic number of " + element + " is " + at_no)
+length(element)
+```
+`disp()` display strings. Text in MATLAB is enclosed in double quotes (`"`).
+`length()` gives the length of an vector.
+
 # Arrays
 
 - All MATLAB variables are _arrays_. So, each numeric variable can contain multiple numbers. You can store related data in one variable by using an array.
@@ -170,10 +179,10 @@ x = pi < 4
 %{extracts all elements of `v1` that are greater than `6`}%
 v = v1(v1 > 6)
 
-a(a < 5 & a > 11)
+a(a =< 5 & a >= 11)
 b(b == 6 | b ~= 0)
 ```
-- Relational operators, such as `>`, `<`, `==`, and `~=` perform comparisons between two values. The outcome of a comparison for equality or inequality is either `1` (`true`) or `0` (`false`).
+- Relational operators, such as `>`, `<`, `<=`, `>=`, `==`, and `~=` perform comparisons between two values. The outcome of a comparison for equality or inequality is either `1` (`true`) or `0` (`false`).
 - Compare an array to a single scalar value using relational operators and the result is a logical array of the same size as the original array.
 - You can combine logical comparisons by using the logical operators AND (`&`) and OR (`|`).
 
@@ -199,7 +208,6 @@ title("Sample Plot")
 xlabel("X-Axis")
 ylabel("Y-Axis")
 ```
-Text in MATLAB is enclosed in double quotes (`"`).
 
 # Importing Data as a Table
 - Opening `.mat` file will load all variables stored by it.
@@ -212,3 +220,19 @@ top3rows = table(1:3,:)
 ```
 - Use dot notation to access columns of a table.
 - To extract rows, use regular array indexing.
+
+# Conditional statements
+![[MATLAB_conditional.png]]
+
+```MATLAB
+if condition1  
+	code  
+elseif condition2  
+	code  
+else  
+	code  
+end
+```
+
+# For Loop
+![[MATLAB_for_loop.png]]
