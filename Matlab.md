@@ -10,36 +10,57 @@ MATLAB consists of three main windows.
 2. Workspace (shows all the variables you created)
 3. Current folder (file explorer)
 
-Use *Live Script* to create a script with multiple lines of command and execute them all at once.
+Use *Script or Live Script* to create a script with multiple lines of command and execute them all at once.
 
 MATLAB also have an inbuilt documentation browser to learn more about functions. You can also open the documentation using the `doc <function_name>` command. If you don't know the name of the function, you can search the documentation using phrases.
 # Basic Commands
 
 ``` MATLAB
+%{This ...
+% is a multiline comment.
+}%
+% This is a comment.
+
 5*3
 k = ans + 1
 k = k / 2
 k
+a = 3 \ 5    % 1.6667
+a = 3 / 5    % 0.6000
 var_no = (ans+k)/2;
-%{This is a comment.}%
+who
+whos
 ```
 + Unless you specify an output variable, MATLAB stores results in a variable named `ans`.
 + Equal to (=) sign is the assignment operator.
 + When you enter just a variable name at the command prompt, MATLAB displays the current value of that variable.
 + When you enter a command without a semicolon at the end, MATLAB displays the result. Add a semicolon to the end of a command to execute it without displaying the command.
 + Variables should contain only letters, numbers and underscore( _ ) and are case-sensitive.
++ `who` lists all variables in the workspace. `whos` displays variables and its size.
+
+```MATLAB
+format long
+pi
+format short
+pi
+```
++ By default, 4 decimal places will be displayed for a floating number.
+- To display more decimal values, use `format long`.
+- To go back to default, use `format short`.
 
 ## Save and Load variables
 
 ``` MATLAB
 save tempvar
 clear
+clc
 load tempvar
 load tempvar k
 save only_no var_no ans
 ```
 + Variables in a workspace can be stored in a `.mat` file by the `save <filename>` command.
-+ All the variables from the workspace can be removed with the `clear` command.
++ All the variables from the workspace can be removed with the `clear` command. Use `clear <var_name>` to clear a specific variable alone.
++ Use `clc` to clear the command window.
 + To load variables from a MAT-file, use the `load <filename>` command.
 + Use `clc` command to clear the Command Window.
 + To load or save only _some_ of your variables, mention the variables as arguments.
@@ -50,6 +71,7 @@ save only_no var_no ans
 ``` MATLAB
 pi
 deg = 90
+yd = sind(deg)
 rad = deg * (pi/180)
 y = sin(rad)
 r = 3
@@ -58,26 +80,16 @@ x = pi*r^2
 - MATLAB contains a wide variety of built-in functions, such as `abs` (absolute value), `sin` (sine) and `eig` (eigenvalues).
 
 ```MATLAB
-format long
-pi
-format short
-pi
-```
-- To display more decimal values, use `format long`.
-- To go back to default, use `format short`.
-
-```MATLAB
 element = ["Lithium" "Argon" "Potassium" "Calcium" "Scandium" "Vanadium"]
 at_no = [3 18 19 20 21 23]
 disp("The atomic number of " + element + " is " + at_no)
 length(element)
 ```
-`disp()` display strings. Text in MATLAB is enclosed in double quotes (`"`).
-`length()` gives the length of an vector.
+`disp()` display strings. Text in MATLAB is enclosed in double quotes (`"`). `length()` gives the length of an vector.
 
 # Arrays
 
-- All MATLAB variables are _arrays_. So, each numeric variable can contain multiple numbers. You can store related data in one variable by using an array.
+- All MATLAB variables are _arrays_. Every data is stored in the form of array.
 - Scalar is represented by a _1_-by-_1_ array. Create arrays with multiple elements using square brackets.
 
 ``` MATLAB
@@ -128,11 +140,11 @@ size(y)
 a = linspace(1,10,10)'
 x = rand(5, 3)
 a(6)
-a(3:5) %{both 2nd and fifth elements are included in range}%
+a(3:5) % both 2nd and fifth elements are included in range
 x(2, 2)
 x(4, end)
 x(end-1, end-2)
-x(13) %{it is same as x(3, 3)}%
+x(13) % it is same as x(3, 3)
 ```
 
 Consider matrix `x = rand(5, 3)`. The table given below lists the different methods to index an element in a matrix.
@@ -148,7 +160,7 @@ Consider matrix `x = rand(5, 3)`. The table given below lists the different meth
 - When used as an index, the colon operator (`:`) specifies all the elements in that dimension.
 - The colon operator can also specify a range of values.
 - Unlike python, both the starting element and ending element are included in the range when slicing.
-- For indexing nonconsecutive numbers, you can use an row vector as an index.
+- For indexing non-consecutive numbers, you can use an row vector as an index.
 - You can change the elements in a vector by combining indexing with assignment.
 ```MATLAB
 x(2, :) %{second row}%
@@ -157,6 +169,25 @@ x(:, end-1:end) %{Last two columns of x}%
 a = 1:3:30
 a([1, 4, 9])
 a(2) = 101
+```
+
+# Matrix functions
+
+```MATLAB
+eye(3) %Identity matrix 3x3
+% 3x3 matrix with random elements as integers between 1:9
+A = randi(9, 3)
+e_value = eig(A) %eigenvalue
+[e_vector, diagonal] = eig(A) %eigenvector and diagonalization
+D = diag([4 9 1]) %Diagonal matrix
+Ainv = inv(A)
+tr_A = A'
+```
+
+```MATLAB
+fprintf("%.3f\t", trace(A))
+fprintf("%.2f\n", det(A))
+fprintf("%d ", size(A))
 ```
 
 # Operation on vectors
@@ -173,8 +204,10 @@ a = z .* y
 ```
 - To perform vector-to-vector operation, they should have the same size.
 - The `*` operator performs matrix multiplication on two equally sized vectors. The `.*` operator performs element-wise multiplication by multiplying the corresponding elements of two equally sized arrays.
+- Use `.` operator for element-wise operations.
 
 # Logical indexing
+
 ```MATLAB
 x = pi < 4
 [5 10 15] > 12
@@ -197,6 +230,8 @@ plot(sample, v1, "k-o", LineWidth=4)
 plot(x1, y1)
 hold on
 plot(x2, y2)
+xlim([-20 20])
+ylim([-10 10])
 hold off
 ```
 - You can plot two vectors of the same length against each other using the `plot(x,y)` function.
