@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "996115a4bbf49629",
+        "id": "404a3fcd3b8363cb",
         "type": "tabs",
         "children": [
           {
-            "id": "a9fff3d3cbea2d62",
+            "id": "b1ec7ed7cee2af13",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a9fff3d3cbea2d62",
+  "active": "b1ec7ed7cee2af13",
   "lastOpenFiles": [
     "MATLAB.md",
     "attachments/Quick Reference.pdf",
