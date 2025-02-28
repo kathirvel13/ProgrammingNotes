@@ -25,7 +25,7 @@ elif [[ $1 == "-l" || $1 == "--log" ]]; then
 	exit 0
 fi
 
-if [[ $(git status) != "On branch main nothing to commit, working tree clean" ]]; then
+if [[ $(git status) != "On branch main Your branch is up to date with 'origin/main'. nothing to commit, working tree clean" ]]; then
 	git add .
 	echo "Enter commit:"; read desc1;
 	echo "Enter Description:"; read desc2;
