@@ -1,8 +1,12 @@
 #matlab
+
 MATLAB is an abbreviation for ***MATrix LABoratory***.
+
+# Reference Notes
 [[Quick Reference.pdf]]
 [[Introduction_MATLAB.pdf]]
 [[Solving systems of Linear equations using MATLAB.pdf]]
+[[matlab-basic-functions-reference.pdf]]
 # Interface
 
 MATLAB consists of three main windows.
@@ -171,6 +175,13 @@ a([1, 4, 9])
 a(2) = 101
 ```
 
+`[ ]` for creating arrays and `( )` for indexing into arrays.
+```MATLAB
+A = [1 2 3; 4 5 6; 7 8 9]
+A(n, :)    % nth row
+A(:, n)    % nth column
+```
+
 # Matrix functions
 
 ```MATLAB
@@ -205,6 +216,12 @@ a = z .* y
 - To perform vector-to-vector operation, they should have the same size.
 - The `*` operator performs matrix multiplication on two equally sized vectors. The `.*` operator performs element-wise multiplication by multiplying the corresponding elements of two equally sized arrays.
 - Use `.` operator for element-wise operations.
+```MATLAB
+A = [1, 2; 3, 4];
+B = [7; 8];
+X = [A B]     % X=[1 2 7; 3 4 8]
+Y = [A; B']   % Y=[1 2; 3 4; 7 8]
+```
 
 # Logical indexing
 
