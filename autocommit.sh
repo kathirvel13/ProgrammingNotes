@@ -31,7 +31,8 @@ if [[ 1 ]]; then
 	echo "Enter commit:"; read desc1;
 	echo "Enter Description:"; read desc2;
 	git add .
-	echo "$(git commit -m "$disc1" -m "$disc2")"; echo;
+	comm = $(git commit -m $disc1 -m $disc2)
+	echo "$comm"; echo;
 	echo "$(git push)"
 else
 	exit 0
