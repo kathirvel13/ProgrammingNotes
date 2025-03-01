@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3b690d644b0d977e",
+        "id": "0abc2ab51c2e0826",
         "type": "tabs",
         "children": [
           {
-            "id": "3c2206c07f64b1a4",
+            "id": "66d1dcc1d8a0c793",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3c2206c07f64b1a4",
+  "active": "66d1dcc1d8a0c793",
   "lastOpenFiles": [
     "NC Bash Scripting.md",
     "Git and Github.md",
