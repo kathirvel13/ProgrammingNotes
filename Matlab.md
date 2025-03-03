@@ -264,6 +264,16 @@ xlabel("X-Axis")
 ylabel("Y-Axis")
 ```
 
+# Surface Plots
+```MATLAB
+r = 5;
+x = -r:0.1:r;
+y = -r:0.1:r;
+[xi, yi] = meshgrid(x, y);
+zi = yi.^2 - xi.^2;
+mesh(xi, yi, zi)
+```
+
 # Importing Data as a Table
 - Opening `.mat` file will load all variables stored by it.
 - Opening an image file will store the values of pixel in a table.
@@ -291,3 +301,10 @@ end
 
 # For Loop
 ![[MATLAB_for_loop.png]]
+
+# While loop
+```MATLAB
+while condition
+	code
+end
+```
