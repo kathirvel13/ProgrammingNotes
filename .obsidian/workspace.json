@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0a75ce7eb6845845",
+        "id": "40ddccf7adf12e1a",
         "type": "tabs",
         "children": [
           {
-            "id": "ecfb929670b2e4a2",
+            "id": "2f1f7f09d302f469",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MATLAB.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MATLAB"
+              "title": "New tab"
             }
           }
         ]
@@ -160,8 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ecfb929670b2e4a2",
+  "active": "2f1f7f09d302f469",
   "lastOpenFiles": [
+    "AI Agents.md",
+    "MATLAB.md",
     "README.md",
     "Git and Github.md",
     "NC Bash Scripting.md",
@@ -171,7 +169,6 @@
     "freecodecamp CSS.md",
     "Artificial Intelligence.md",
     "autocommit.sh",
-    "MATLAB.md",
     "attachments/MATLAB/matlab-basic-functions-reference.pdf",
     "attachments/Quick Reference.pdf",
     "attachments/MATLAB_for_loop.png",
