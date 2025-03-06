@@ -4,6 +4,7 @@
 [ollama](https://github.com/ollama/ollama)
 [browser-use](https://github.com/browser-use/browser-use)
 [web-ui](https://github.com/browser-use/web-ui)
+API keys from [openrouter](https://openrouter.ai/)
 
 # Youtube Links
 [Build ANYTHING With AI Agents For FREE! - Ishan Sharma](https://www.youtube.com/watch?v=u3c8OQaeLWo)
@@ -32,10 +33,26 @@ With pip (Python>=3.11)
 pip install browser-use
 ```
 
-Install playwright
+Install [playwright](https://playwright.dev/) for browser testing and web scraping.
 ```shell
 playwright install
 ```
 
 ## Installing web-ui
 [Installation Guide](https://github.com/browser-use/web-ui?tab=readme-ov-file#option-1-local-installation)
+```shell
+pyenv install 3.11
+git clone https://github.com/browser-use/web-ui.git
+cd web-ui
+pip install virtualenv
+python3 -m venv .venv
+source .venv\bin\activate
+pip install -r requirements.txt
+cp .env.example .env
+nano .env
+```
+
+To run web-ui
+```shell
+python webui.py --ip 127.0.0.1 --port 7788
+```
