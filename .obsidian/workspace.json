@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "794dfe5540402f30",
+        "id": "f6004680dbcf6f7b",
         "type": "tabs",
         "children": [
           {
-            "id": "2da221fb75ba10a0",
+            "id": "81bdb97a134fe5ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -160,7 +160,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2da221fb75ba10a0",
+  "active": "81bdb97a134fe5ba",
   "lastOpenFiles": [
     "AI Agents.md",
     "MATLAB.md",

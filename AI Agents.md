@@ -41,15 +41,13 @@ playwright install
 ## Installing web-ui
 [Installation Guide](https://github.com/browser-use/web-ui?tab=readme-ov-file#option-1-local-installation)
 ```shell
-pyenv install 3.11
 git clone https://github.com/browser-use/web-ui.git
 cd web-ui
 pip install virtualenv
 python3 -m venv .venv
-source .venv\bin\activate
 pip install -r requirements.txt
 cp .env.example .env
-nano .env
+notepad .env
 ```
 
 To run web-ui
