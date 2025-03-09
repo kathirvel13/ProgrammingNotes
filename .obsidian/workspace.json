@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "f6004680dbcf6f7b",
+        "id": "2d7807ddcd17c1b9",
         "type": "tabs",
         "children": [
           {
-            "id": "81bdb97a134fe5ba",
+            "id": "d48cda1bc9a979a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI Agents.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "AI Agents"
+              "title": "New tab"
             }
           }
         ]
@@ -160,7 +156,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81bdb97a134fe5ba",
+  "active": "d48cda1bc9a979a0",
   "lastOpenFiles": [
     "AI Agents.md",
     "MATLAB.md",
