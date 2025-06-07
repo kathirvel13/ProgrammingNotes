@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2d7807ddcd17c1b9",
+        "id": "70c04a45f0828a7c",
         "type": "tabs",
         "children": [
           {
-            "id": "d48cda1bc9a979a0",
+            "id": "4ef844e0b0de6a73",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Statistics Onramp.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Statistics Onramp"
             }
           }
         ]
@@ -156,10 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d48cda1bc9a979a0",
+  "active": "4ef844e0b0de6a73",
   "lastOpenFiles": [
+    "MATLAB onramp.md",
+    "Statistics Onramp.md",
+    "Artificial Intelligence.md",
     "AI Agents.md",
-    "MATLAB.md",
     "README.md",
     "Git and Github.md",
     "NC Bash Scripting.md",
@@ -167,7 +173,6 @@
     "Markdown Basics.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
-    "Artificial Intelligence.md",
     "autocommit.sh",
     "attachments/MATLAB/matlab-basic-functions-reference.pdf",
     "attachments/Quick Reference.pdf",
