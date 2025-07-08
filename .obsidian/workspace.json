@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "70c04a45f0828a7c",
+        "id": "4046e8af7deaa7aa",
         "type": "tabs",
         "children": [
           {
-            "id": "4ef844e0b0de6a73",
+            "id": "4cedce3e4c86a900",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -160,12 +160,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ef844e0b0de6a73",
+  "active": "4cedce3e4c86a900",
   "lastOpenFiles": [
     "MATLAB onramp.md",
     "Statistics Onramp.md",
-    "Artificial Intelligence.md",
     "AI Agents.md",
+    "Artificial Intelligence.md",
+    "attachments/MATLAB/Statistics Onramp Quick Reference.pdf",
     "README.md",
     "Git and Github.md",
     "NC Bash Scripting.md",

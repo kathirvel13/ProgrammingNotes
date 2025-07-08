@@ -1,7 +1,6 @@
 #matlab #onramp
 
 MATLAB is an abbreviation for ***MATrix LABoratory***.
-
 # Reference Notes
 [[Quick Reference.pdf]]
 [[Introduction_MATLAB.pdf]]

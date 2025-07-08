@@ -1,4 +1,4 @@
-#AI
+#AI #ML 
 
 Artificial intelligence is system of simulation of human intelligence by a machine.
 
