@@ -11,10 +11,14 @@
             "id": "6d0351cdad4deca8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Statistics Onramp.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Statistics Onramp"
             }
           }
         ]
@@ -158,6 +162,7 @@
   },
   "active": "6d0351cdad4deca8",
   "lastOpenFiles": [
+    "attachments/MATLAB/Kurtosis.png",
     "Statistics Onramp.md",
     "attachments/MATLAB/Box_Plot.png",
     "MATLAB onramp.md",
