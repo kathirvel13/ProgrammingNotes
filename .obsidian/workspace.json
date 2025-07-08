@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3044024beee92f72",
+        "id": "103645e453b3a768",
         "type": "tabs",
         "children": [
           {
-            "id": "6d0351cdad4deca8",
+            "id": "096c504ed4aaed71",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Statistics Onramp.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Statistics Onramp"
+              "title": "New tab"
             }
           }
         ]
@@ -160,22 +156,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d0351cdad4deca8",
+  "active": "096c504ed4aaed71",
   "lastOpenFiles": [
-    "attachments/MATLAB/Kurtosis.png",
     "Statistics Onramp.md",
-    "attachments/MATLAB/Box_Plot.png",
-    "MATLAB onramp.md",
-    "AI Agents.md",
-    "Artificial Intelligence.md",
-    "attachments/MATLAB/Statistics Onramp Quick Reference.pdf",
     "README.md",
-    "Git and Github.md",
-    "NC Bash Scripting.md",
     "NC Linux.md",
+    "NC Bash Scripting.md",
+    "MATLAB onramp.md",
     "Markdown Basics.md",
+    "Git and Github.md",
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
+    "Artificial Intelligence.md",
+    "AI Agents.md",
+    "attachments/MATLAB/Kurtosis.png",
+    "attachments/MATLAB/Box_Plot.png",
+    "attachments/MATLAB/Statistics Onramp Quick Reference.pdf",
     "autocommit.sh",
     "attachments/MATLAB/matlab-basic-functions-reference.pdf",
     "attachments/Quick Reference.pdf",

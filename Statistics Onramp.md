@@ -10,6 +10,7 @@ Statistics is a field of mathematics focused on collecting, analyzing and presen
 - Interquartile Range (IQR) -> Spread of values in middle 50% of the data
 - IQR = Q3 - Q1
 - Probability Density Function (pdf)
+- Cumulative Density Function (cdf)
 - Skewness
 - Kurtosis
 # Reading csv files
@@ -91,3 +92,51 @@ k = kurtosis(x)
 ```
 # Compute by Group
 The **Compute by Group** Live Editor task allows you to calculate multiple descriptive statistics by group. By default, the task computes counts for each group. The **Compute by Group** Live Editor task allows you to compute statistics on multiple groups and multiple variables.
+# Normal Distribution
+The normal distribution (aka Gaussian distribution) is the classic "bell curve" distribution. The most probable values are near the mean; values farther from the mean are less probable.
+The normal distribution is defined by two numbers: the mean μ and the standard deviation σ. The standard normal distribution has a mean of 0 and a standard deviation of 1, and spans from about –3 to 3.
+
+To create normally distributed random numbers with known mean and standard deviation, you can use the function `normrnd`.  
+```MATLAB
+x = normrnd(mean, std, size)
+```
+## Probability Density Function (pdf)
+Histograms can give you some idea of the shape of the data. However, the exact shape of the distribution is given by the distribution's _probability density function_ (pdf). The pdf is a mathematical function in which the area under the curve between two values is the probability that a randomly selected value falls in this range.
+
+You can calculate the pdf of the normal distribution with mean `mu` and standard deviation `sigma`, evaluated at the values in x, by using the `normpdf` function.  
+```MATLAB
+y = normpdf(x, mu, sigma)
+```
+## Cumulative Density Function (cdf)
+The _cumulative distribution function_ (cdf) gives the area under the curve of the pdf up to a specified value—that is, the probability that a value selected randomly from the distribution will be less than or equal to the specified value.
+
+You can calculate the cdf of the normal distribution with mean `mu` and standard deviation `sigma`, evaluated at the values in x, by using the `normcdf` function.  
+```MATLAB
+y = normcdf(x, mu, sigma)
+```
+## Fit a normal distribution
+You can fit a probability distribution to your data using the `fitdist` function.  
+~~~MATLAB
+pd = fitdist(x, "distName")
+~~~
+## Quantile-Quantile Plots
+You can evaluate the fitted distribution by comparing the quantiles of the data `x` to the theoretical quantile values from a normal distribution by using a _quantile-quantile_, or _q-q plot_. The blue plus signs (+) in the plot represent the observations. The closer the plus signs align with the red line, the better the distribution fits the data.
+```MATLAB
+qqplot(x, pd)
+```
+# Testing Hypothesis (H0 or H1)
+Double t-test by `ttest2(pop1, pop2)` 
+`ttest2(pop1, pop2, Tail="right")` to perform a right tailed t-test.
+## Test for Normality
+You can use hypothesis testing to determine if your data follows a normal distribution. You can use several tests to test for normality, including:
+
+|Test Name|Function|
+|---|---|
+|Jarque-Bera|[`jbtest`](https://www.mathworks.com/help/stats/jbtest.html)|
+|Lilliefors|[`lillietest`](https://www.mathworks.com/help/stats/lillietest.html)|
+|Anderson-Darling|[`adtest`](https://www.mathworks.com/help/stats/adtest.html)|
+|Chi-square goodness-of-fit|[`chi2gof`](https://www.mathworks.com/help/stats/chi2gof.html)|
+|Kolmogorov-Smirnov|[`kstest`](https://www.mathworks.com/help/stats/kstest.html)|
+
+- **h=1**: Reject the null hypothesis. There is evidence suggesting that the data does not follow a normal distribution.
+- **h=0**: Fail to reject the null hypothesis. There is not enough evidence to claim that the data does not follow a normal distribution.

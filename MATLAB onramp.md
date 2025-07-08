@@ -120,6 +120,7 @@ h = linspace(1,2*pi,100)'
 ```MATLAB
 x = rand(2)
 y = rand(2, 3)
+z = randn(3, 4)
 a = zeros(3)
 b = ones(4, 3)
 size(y)
