@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "94e760d9db050ee5",
+        "id": "cbc3b119d522a30d",
         "type": "tabs",
         "children": [
           {
-            "id": "631727d3d75f955e",
+            "id": "91dde8425f7a01c2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MATLAB onramp.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "MATLAB onramp"
+              "title": "New tab"
             }
           }
         ]
@@ -160,12 +156,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "631727d3d75f955e",
+  "active": "91dde8425f7a01c2",
   "lastOpenFiles": [
+    "ROS & Gazebo.md",
+    "attachments/ROS&Gazebo/README(RoseCityRobotics_Github_robotics-resources).md",
+    "attachments/ROS&Gazebo/Unconfirmed 758495.crdownload",
+    "attachments/ROS&Gazebo/Introduction to ROS.pdf",
+    "attachments/ROS&Gazebo/Introduction to ROS.pdf.crdownload",
+    "attachments/ROS&Gazebo",
+    "attachments/New folder",
+    "NC Linux.md",
+    "README.md",
     "Statistics Onramp.md",
     "MATLAB onramp.md",
-    "README.md",
-    "NC Linux.md",
     "NC Bash Scripting.md",
     "Markdown Basics.md",
     "Git and Github.md",
@@ -188,7 +191,6 @@
     "Guvi Python.md",
     "Responsive Web Design freecodecamp.md",
     "attachments/Git_pull.jpg",
-    "attachments",
     "Git Commands.png",
     "Welcome.md"
   ]
