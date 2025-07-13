@@ -11,10 +11,14 @@
             "id": "91dde8425f7a01c2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ROS & Gazebo.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ROS & Gazebo"
             }
           }
         ]

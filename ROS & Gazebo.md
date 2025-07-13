@@ -12,7 +12,7 @@
 - [ROS2 for Beginners in 2.5 hours](https://www.youtube.com/watch?v=HJAE5Pk8Nyw)
 - [The Construct](https://www.theconstruct.ai/)
 - [The Construct YT Channel](https://www.youtube.com/@TheConstruct/videos)
-- 
+- [Robotics Back End YT Channel](https://www.youtube.com/@RoboticsBackEnd/videos)
 ## Installed Software
 - Ubuntu 24.04.2 LTS x86_64
 - ROS Jassy
