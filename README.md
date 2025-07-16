@@ -10,6 +10,7 @@ This github repository contains notes about things which learn about computer an
 - MATLAB
 - Statistics
 - ROS & Gazebo
+- Simulink
 
 # Autocommit script
 I have also created a script file which can automatically commit the changes made in local repository to the remote repository. For this to work, you must have already logged in with your github credentials and link local git repository with github repository using `git remote`.
