@@ -30,11 +30,11 @@ This block when double-clicked opens a window where you can view the values of a
 ## Simulation Time and Step Size
 When Simulink runs a simulation, it numerically solves the dynamic equations represented in the model. Characteristics of dynamic systems can vary widely; for example, they can be discrete, continuous, fast, or slow. To account for this, Simulink includes many types of numerical solvers.
 # MATLAB and Simulink
-Simulink is built on top of MATLAB. You can create variables using MATLAB scripts or use MATLAB to preprocess data to be used in Simulink.
-Many block parameters accept MATLAB variable names as inputs. Simply enter the variable name as it exists in the MATLAB workspace into the parameter field.
-Simulink supports variable creation from the Block Parameters dialog. This way, you can create MATLAB variables inside Simulink and reuse their values in other blocks.
-In addition to reading and creating MATLAB variables, Simulink can utilize MATLAB _functions_.
-The MATLAB Function block (**Simulink > User-Defined functions**) enables you to incorporate a MATLAB function directly into your model.
+- Simulink is built on top of MATLAB. You can create variables using MATLAB scripts or use MATLAB to preprocess data to be used in Simulink.
+- Many block parameters accept MATLAB variable names as inputs. Simply enter the variable name as it exists in the MATLAB workspace into the parameter field.
+- Simulink supports variable creation from the Block Parameters dialog. This way, you can create MATLAB variables inside Simulink and reuse their values in other blocks.
+- In addition to reading and creating MATLAB variables, Simulink can utilize MATLAB _functions_.
+- The MATLAB Function block (**Simulink > User-Defined functions**) enables you to incorporate a MATLAB function directly into your model.
 # Discrete Systems
 A discrete, dynamic system is a model of a system's current state x[k] based on current or previous states.
 In Simulink, discrete blocks are executed at fixed, periodic intervals. This interval is the _sample time_ for the block. Discrete blocks output discrete signals, as defined by their **Sample time** parameter.
