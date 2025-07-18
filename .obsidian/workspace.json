@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0ca265ed46a0ea45",
+        "id": "0577614809c05737",
         "type": "tabs",
         "children": [
           {
-            "id": "0ff7e14dbfad0fac",
+            "id": "e04b9833e57461c7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Simulink Onramp.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Simulink Onramp"
             }
           }
         ]
@@ -156,11 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ff7e14dbfad0fac",
+  "active": "e04b9833e57461c7",
   "lastOpenFiles": [
+    "Statistics Onramp.md",
+    "MATLAB Onramp.md",
     "Simulink Onramp.md",
     "README.md",
-    "Statistics Onramp.md",
     "ROS & Gazebo.md",
     "attachments/ROS&Gazebo/README(RoseCityRobotics_Github_robotics-resources).md",
     "attachments/ROS&Gazebo/Unconfirmed 758495.crdownload",
@@ -169,7 +174,6 @@
     "attachments/ROS&Gazebo",
     "attachments/New folder",
     "NC Linux.md",
-    "MATLAB onramp.md",
     "NC Bash Scripting.md",
     "Markdown Basics.md",
     "Git and Github.md",
