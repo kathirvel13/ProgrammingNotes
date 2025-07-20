@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2815a393af5b0882",
+        "id": "dfaedb5def262511",
         "type": "tabs",
         "children": [
           {
-            "id": "2ab973444a0565c4",
+            "id": "cd2708c691b02315",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ROS & Gazebo.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ROS & Gazebo"
+              "title": "New tab"
             }
           }
         ]
@@ -160,10 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ab973444a0565c4",
+  "active": "cd2708c691b02315",
   "lastOpenFiles": [
-    "README.md",
     "ROS & Gazebo.md",
+    "README.md",
     "Simulink Onramp.md",
     "attachments/MATLAB/Simulink/Pasted image 20250718130958.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130903.png",
