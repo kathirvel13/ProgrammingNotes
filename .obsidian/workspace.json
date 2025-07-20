@@ -11,10 +11,14 @@
             "id": "2ab973444a0565c4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "ROS & Gazebo.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "ROS & Gazebo"
             }
           }
         ]
@@ -158,6 +162,8 @@
   },
   "active": "2ab973444a0565c4",
   "lastOpenFiles": [
+    "README.md",
+    "ROS & Gazebo.md",
     "Simulink Onramp.md",
     "attachments/MATLAB/Simulink/Pasted image 20250718130958.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130903.png",
@@ -174,8 +180,6 @@
     "attachments/New folder",
     "Statistics Onramp.md",
     "MATLAB Onramp.md",
-    "README.md",
-    "ROS & Gazebo.md",
     "attachments/ROS&Gazebo/README(RoseCityRobotics_Github_robotics-resources).md",
     "attachments/ROS&Gazebo/Unconfirmed 758495.crdownload",
     "attachments/ROS&Gazebo/Introduction to ROS.pdf",

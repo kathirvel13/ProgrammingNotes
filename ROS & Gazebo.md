@@ -13,11 +13,22 @@
 - [The Construct](https://www.theconstruct.ai/)
 - [The Construct YT Channel](https://www.youtube.com/@TheConstruct/videos)
 - [Robotics Back End YT Channel](https://www.youtube.com/@RoboticsBackEnd/videos)
-## Installed Software
-- Ubuntu 24.04.2 LTS x86_64
-- ROS Jassy
-- Gazebo `gz-harmonic` (v8.9.0)
-- RViz
+# Installed Software
+- Ubuntu 24.04.2 (Noble Numbat) LTS x86_64
+- ROS Jazzy Jalisco
+- Gazebo Harmonic `gz-harmonic` (v8.9.0)
+## Installing ROS2
+Check out the [documentation](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html) for the installation commands.
+#### Sourcing
+To set up the environment by sourcing, execute this command every time you use ROS2.
+```bash
+source /opt/ros/jazzy/setup.bash
+
+nano ~/.bashrc
+```
+Or, add this command to the end of `.bashrc` file for automatic sourcing.
+## Installing Gazebo
+Check out the [documentation](https://gazebosim.org/docs/harmonic/install/) for the installation commands.
 ```bash
 gz sim --versions
 ```
