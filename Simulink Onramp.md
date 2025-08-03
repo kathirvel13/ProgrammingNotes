@@ -1,5 +1,6 @@
 #simulink #matlab #onramp 
 # Simulink
+Simulink is a MATLAB-based graphical programming environment for modeling, simulating and analyzing multidomain dynamical systems.
 It is a tool developed by MATLAB which simulates real-world operations represented in the form of a block diagram. Simulink uses graphical elements to represent the inputs, outputs, and calculations within a simulation. Signals make connections between blocks at ports.
 A signal is a piece of information, such as a numeric value, that can change over the course of a simulation. Blocks accept signals at input ports, perform an operation, and return signals at output ports. Signal lines are visual elements that connect block ports and show where a signal flows: from output ports to input ports, and in the direction of the arrow.
 # Blocks used
