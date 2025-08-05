@@ -48,3 +48,26 @@ The three most common state actions are `entry`, `during`, and `exit`. These 
 The `entry` keyword in each state allows you to include code that is executed when a state is entered.
 ## Condition Action
 Stateflow can also perform actions associated with transition conditions. The condition action is executed when the preceding transition condition is true. Condition actions are denoted by curly braces (`{}`), to distinguish them from the condition, in square brackets (`[]`).
+# Chart Execution
+Stateflow inherits its sample time (time taken by the numerical solver to take a step) from the Simulink model it is present in.
+In a sample time, either the transition condition is checked and state transition occurs, or none of the transition conditions are satisfied and the state remains unchanged, performing the code in `during` block.
+
+The Stateflow chart executes once per time step. Chart execution results in one of two outcomes:  
+- A valid transition is taken and a new state becomes active
+- No valid transition exists, and the current state remains active.
+State `entry` and `exit` actions occur sequentially when leaving and entering a state. The `during` action occurs for each consecutive time step that a state remains active.
+# Flowcharts
+You can also use Stateflow to construct _flow charts_: stateless models of logic patterns such as decision trees and iterative loops. Flow charts can visually represent complex algorithms in a format that is easy to read, and Stateflow allows you to create and run flow charts without having to translate them into text code.
+You build flow charts using two kinds of graphical elements: transitions and junctions. You are already familiar with transitions—conditional pathways represented by arrows. _Junctions_ are nodes that divide the pathways into segments, and are represented by circles ![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Flow%20Charts/images/junction.png). They can provide additional branches along a decision pathway.
+## Pattern Wizard
+You can use the Pattern Wizard to create common flow charts. These patterns include:
+1. Decision: `if`, `if-else`, and nested `if` decision patterns.
+2. Loop: `for`, `while`, and `do-while` loop patterns.
+3. Switch: `switch` patterns with up to four cases.
+4. Custom: Custom patterns that you can save for later reuse.
+
+To insert a pattern, open a chart. the **Modeling** tab, **Pattern** and choose the pattern you want to create.
+# Functions
+You can create functions in Stateflow and can call them multiple times in a chart. You will learn about two types of Stateflow functions: graphical functions and MATLAB functions. You can learn about other types of functions by browsing the documentation page, [Reusable Components in Charts](https://in.mathworks.com/help/releases/R2024b/stateflow/reusable-components-in-charts.html). You can call functions as state actions or condition actions. If a function returns a Boolean value, you can also call it as a transition condition. 
+Graphical functions are reusable chart elements that contain flow charts. To add a graphical function, use the left mouse button to click and drag from the graphical function button (![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Functions%20in%20Stateflow/Stateflow%20Functions%20Overview/images/functionToolbar.png)) on the object palette . This creates a function container that you can name and populate.
+MATLAB Functions are helpful to incorporate MATLAB functions into a Stateflow chart. To create a MATLAB function box in Stateflow, click and drag from the icon on the object palette (![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Functions%20in%20Stateflow/Stateflow%20Functions%20Overview/images/mlFuncToolbar.png)).
