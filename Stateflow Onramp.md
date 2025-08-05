@@ -28,7 +28,7 @@ Here is a list of other [Temporal Logic Operators](https://in.mathworks.com/help
 Default transition specifies the initial state of the chart. When creating state charts, default transitions should not have any transition conditions.
 ![Default Transition](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Creating%20Stateflow%20Charts/Default%20Transitions/images/default.png)
 If any chart is not connected to the default transition (directly or indirectly), it is an unreachable state.
-# Chart Data
+# Stateflow Data
 In Stateflow, the inputs, outputs, and local variables used in a chart are called _chart data_. All chart data must have a specified scope. Common data scopes are:
 
 ![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Symbols/Stateflow%20Data/images/localData.png) - Local Data is only used locally within the chart.
@@ -37,3 +37,14 @@ In Stateflow, the inputs, outputs, and local variables used in a chart are calle
 ![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Symbols/Stateflow%20Data/images/parameter.png) - Parameter - A MATLAB workspace variable or Simulink mask parameter defines the value of the data.
 
 The **Symbols** pane allows you to quickly add and remove Stateflow data and assign the data scope using the graphical interface. **Symbols** pane is automatically docked on the right side of the Stateflow editor. If you accidentally close this pane, you can reopen it using the **Symbols** pane button in the **Modeling** tab.
+Denoting data as an input or output creates a port on the chart to pass Simulink signals.
+# Chart Action
+Chart actions allow you to execute code during chart simulation. 
+- _State actions_ define what Stateflow does when a particular state is active.
+- _Condition actions_ define what Stateflow does when a transition condition is true.
+![[Stateflow Action.png]]
+## State Actions
+The three most common state actions are `entry`, `during`, and `exit`. These occur when they sound like they would: when entering a state, when remaining in a state, and when leaving a state, respectively.
+The `entry` keyword in each state allows you to include code that is executed when a state is entered.
+## Condition Action
+Stateflow can also perform actions associated with transition conditions. The condition action is executed when the preceding transition condition is true. Condition actions are denoted by curly braces (`{}`), to distinguish them from the condition, in square brackets (`[]`).

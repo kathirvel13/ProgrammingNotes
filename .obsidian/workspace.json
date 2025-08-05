@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "510751f691f01870",
+        "id": "b0299c369369ce7a",
         "type": "tabs",
         "children": [
           {
-            "id": "9f061e60053f1627",
+            "id": "7ea611cf73a744cb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Stateflow Onramp.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Stateflow Onramp"
             }
           }
         ]
@@ -156,8 +160,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f061e60053f1627",
+  "active": "7ea611cf73a744cb",
   "lastOpenFiles": [
+    "attachments/MATLAB/Stateflow Action.png",
     "Stateflow Onramp.md",
     "Simulink Onramp.md",
     "README.md",
@@ -173,7 +178,6 @@
     "attachments/MATLAB/Simulink/Pasted image 20250718130652.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130507.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130420.png",
-    "attachments/MATLAB/Simulink/Pasted image 20250718130447.png",
     "attachments/MATLAB/Simulink",
     "attachments/Simulink",
     "attachments/New folder",
