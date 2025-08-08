@@ -78,5 +78,5 @@ currIdx,wordLength => Parameters of the function
 idx => return variable
 ```
 # Chart Hierarchy
-Using hierarchy allows you to group states with common properties or functionality and to avoid redundancy in your Stateflow chart. Inside a superchart, all subcharts for a superstate are present.
+Using hierarchy allows you to group states with common properties or functionality and to avoid redundancy in your Stateflow chart. Inside a superstate, all substates for that superstate are present.
 For example, `Normal` and `Faulty` states in a traffic signal controller.
