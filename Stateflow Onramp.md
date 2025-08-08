@@ -71,3 +71,12 @@ To insert a pattern, open a chart. the **Modeling** tab, **Pattern** and cho
 You can create functions in Stateflow and can call them multiple times in a chart. You will learn about two types of Stateflow functions: graphical functions and MATLAB functions. You can learn about other types of functions by browsing the documentation page, [Reusable Components in Charts](https://in.mathworks.com/help/releases/R2024b/stateflow/reusable-components-in-charts.html). You can call functions as state actions or condition actions. If a function returns a Boolean value, you can also call it as a transition condition. 
 Graphical functions are reusable chart elements that contain flow charts. To add a graphical function, use the left mouse button to click and drag from the graphical function button (![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Functions%20in%20Stateflow/Stateflow%20Functions%20Overview/images/functionToolbar.png)) on the object palette . This creates a function container that you can name and populate.
 MATLAB Functions are helpful to incorporate MATLAB functions into a Stateflow chart. To create a MATLAB function box in Stateflow, click and drag from the icon on the object palette (![](https://matlabacademy-content.mathworks.com/4.79.0/simulinkR2024b/content/Stateflow/Functions%20in%20Stateflow/Stateflow%20Functions%20Overview/images/mlFuncToolbar.png)).
+```MATLAB
+function idx = increment(currIdx,wordLength)
+increment => function name
+currIdx,wordLength => Parameters of the function
+idx => return variable
+```
+# Chart Hierarchy
+Using hierarchy allows you to group states with common properties or functionality and to avoid redundancy in your Stateflow chart. Inside a superchart, all subcharts for a superstate are present.
+For example, `Normal` and `Faulty` states in a traffic signal controller.
