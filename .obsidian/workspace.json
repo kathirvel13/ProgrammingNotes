@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "47896e87fab755ee",
+        "id": "b2387c1671175e0c",
         "type": "tabs",
         "children": [
           {
-            "id": "ae93360f0f483469",
+            "id": "d9b7759dfdaf48b9",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,6 +148,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -156,15 +157,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae93360f0f483469",
+  "active": "d9b7759dfdaf48b9",
   "lastOpenFiles": [
-    "Stateflow Onramp.md",
-    "attachments/MATLAB/Stateflow Action.png",
-    "Simulink Onramp.md",
-    "README.md",
-    "MATLAB Onramp.md",
     "ROS & Gazebo.md",
+    "README.md",
+    "AI Agents.md",
+    "Artificial Intelligence.md",
+    "NC Linux.md",
+    "Simulink Onramp.md",
     "Statistics Onramp.md",
+    "Stateflow Onramp.md",
+    "NC Bash Scripting.md",
+    "MATLAB Onramp.md",
+    "Markdown Basics.md",
+    "Git and Github.md",
+    "freecodecamp HTML.md",
+    "freecodecamp CSS.md",
+    "attachments/MATLAB/Stateflow Action.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130958.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130903.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130756.png",
@@ -182,14 +191,6 @@
     "attachments/ROS&Gazebo/Introduction to ROS.pdf",
     "attachments/ROS&Gazebo/Introduction to ROS.pdf.crdownload",
     "attachments/ROS&Gazebo",
-    "NC Linux.md",
-    "NC Bash Scripting.md",
-    "Markdown Basics.md",
-    "Git and Github.md",
-    "freecodecamp HTML.md",
-    "freecodecamp CSS.md",
-    "Artificial Intelligence.md",
-    "AI Agents.md",
     "attachments/MATLAB/Statistics Onramp Quick Reference.pdf",
     "autocommit.sh",
     "attachments/MATLAB/matlab-basic-functions-reference.pdf",
