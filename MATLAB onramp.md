@@ -308,3 +308,8 @@ while condition
 	code
 end
 ```
+# Vectors and Matrices
+- Array addition and subtraction work element-wise; the operation is applied to each of the corresponding elements.
+- When you perform arithmetic with an array and a scalar, each element in the array is operated on by the scalar.
+- There are two types of operations performed on matrices: element-wise (`.*, ./, .^`) and matrix operations (`*, /, ^`).
+- You can round numbers in an array to `n` decimal places with the [`round`](https://www.mathworks.com/help/matlab/ref/double.round.html) function.
