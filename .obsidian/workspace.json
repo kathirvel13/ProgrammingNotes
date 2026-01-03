@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e54f021dff5cc020",
+        "id": "352ed49726e25737",
         "type": "tabs",
         "children": [
           {
-            "id": "c3ec0c39f18011aa",
+            "id": "4756cc2ba7083fd5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OverTheWire Bandit.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "OverTheWire Bandit"
             }
           }
         ]
@@ -157,22 +161,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3ec0c39f18011aa",
+  "active": "4756cc2ba7083fd5",
   "lastOpenFiles": [
-    "MATLAB Onramp.md",
-    "ROS & Gazebo.md",
-    "README.md",
+    "OverTheWire Bandit.md",
+    "NC Linux.md",
     "AI Agents.md",
     "Artificial Intelligence.md",
-    "NC Linux.md",
-    "Simulink Onramp.md",
-    "Statistics Onramp.md",
-    "Stateflow Onramp.md",
-    "NC Bash Scripting.md",
-    "Markdown Basics.md",
-    "Git and Github.md",
-    "freecodecamp HTML.md",
     "freecodecamp CSS.md",
+    "freecodecamp HTML.md",
+    "Git and Github.md",
+    "Markdown Basics.md",
+    "MATLAB Onramp.md",
+    "NC Bash Scripting.md",
+    "README.md",
+    "ROS & Gazebo.md",
+    "Simulink Onramp.md",
+    "Stateflow Onramp.md",
+    "Statistics Onramp.md",
     "attachments/MATLAB/Stateflow Action.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130958.png",
     "attachments/MATLAB/Simulink/Pasted image 20250718130903.png",
