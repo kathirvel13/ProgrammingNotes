@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "244d7727a3db1c9a",
+        "id": "ceab784dfcf2b928",
         "type": "tabs",
         "children": [
           {
-            "id": "a66d9969d1abfd18",
+            "id": "363b89ab65b3b133",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -157,7 +157,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a66d9969d1abfd18",
+  "active": "363b89ab65b3b133",
   "lastOpenFiles": [
     "PostgreSQL.md",
     "README.md",
