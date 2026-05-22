@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "00b66c95a7dbe237",
+        "id": "2f42cacd2b3de85f",
         "type": "tabs",
         "children": [
           {
-            "id": "2d665d10f476a221",
+            "id": "5f3b4ea9313101fa",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Not Pron Puzzle.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Not Pron Puzzle"
             }
           }
         ]
@@ -157,8 +161,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2d665d10f476a221",
+  "active": "5f3b4ea9313101fa",
   "lastOpenFiles": [
+    "Not Pron Puzzle.md",
     "Statistics Onramp.md",
     "Stateflow Onramp.md",
     "Simulink Onramp.md",
