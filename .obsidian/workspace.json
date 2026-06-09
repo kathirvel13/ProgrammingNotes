@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2f42cacd2b3de85f",
+        "id": "748af77f9a8ba45e",
         "type": "tabs",
         "children": [
           {
-            "id": "5f3b4ea9313101fa",
+            "id": "028a81e7d3b7f8ce",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Not Pron Puzzle.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Not Pron Puzzle"
+              "title": "New tab"
             }
           }
         ]
@@ -161,8 +157,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f3b4ea9313101fa",
+  "active": "028a81e7d3b7f8ce",
   "lastOpenFiles": [
+    "LaTeX.md",
     "Not Pron Puzzle.md",
     "Statistics Onramp.md",
     "Stateflow Onramp.md",
