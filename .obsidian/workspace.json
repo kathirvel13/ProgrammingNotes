@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ad23cf1195919afb",
+        "id": "f9780547f00082a8",
         "type": "tabs",
         "children": [
           {
-            "id": "347bf97a8fbbaf2d",
+            "id": "48a7dc21cddd6d92",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -37,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -157,9 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "347bf97a8fbbaf2d",
+  "active": "48a7dc21cddd6d92",
   "lastOpenFiles": [
-    "Statistics Onramp.md",
+    "TL-MR3020.md",
     "Stateflow Onramp.md",
     "Simulink Onramp.md",
     "ROS & Gazebo.md",
@@ -175,6 +177,8 @@
     "freecodecamp HTML.md",
     "freecodecamp CSS.md",
     "Artificial Intelligence.md",
+    "ML Challenge Blog Tutorial.md",
+    "Statistics Onramp.md",
     "Not Pron Puzzle.md",
     "AI Agents.md",
     "attachments/MATLAB/Stateflow Action.png",
